@@ -1,0 +1,26 @@
+{
+  "name": "ChromeExtensionTemplate",
+  "version": "1.0.0",
+  "description": "Chrome Extension template",
+  "manifest_version": 3,
+  "icons": {
+    "16": "asset/logo16.png",
+    "48": "asset/logo48.png",
+    "128": "asset/logo128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [],
+      "js": ["js/jquery-3.6.3.min.js", "js/content.js"],
+      "exclude_matches": [],
+      "css": ["css/content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["html/*.html"],
+      "matches": []
+    }
+  ]
+}
